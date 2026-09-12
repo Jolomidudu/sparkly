@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Spark — Dating Demo",
+  title: "Sparkly — Dating Demo",
   description: "A beautiful light demo of a modern dating app. Swipe, match, connect.",
   openGraph: {
-    title: "Spark — Dating Demo",
+    title: "Sparkly — Dating Demo",
     description: "Swipe, match, and chat in this polished dating app demo.",
     type: "website",
   },

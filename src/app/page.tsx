@@ -19,7 +19,7 @@ export default function LandingPage() {
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#ff4458] to-[#ff7a8a] flex items-center justify-center">
             <Heart className="w-5 h-5 text-white fill-white" />
           </div>
-          <span className="text-xl font-bold tracking-tight">Spark</span>
+          <span className="text-xl font-bold tracking-tight">Sparkly</span>
         </div>
         <Link
           href="/discover"

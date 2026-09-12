@@ -1,4 +1,4 @@
-# Spark — Dating App Demo
+# Sparkly — Dating App Demo
 
 A lightweight, polished Tinder/Bumble-style dating web app demo.
 
