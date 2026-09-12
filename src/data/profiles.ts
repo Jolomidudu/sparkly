@@ -1,0 +1,108 @@
+import { Profile } from "@/lib/types";
+
+export const DEMO_PROFILES: Profile[] = [
+  {
+    id: "1",
+    name: "Sofia",
+    age: 26,
+    bio: "Coffee addict ☕ | Travel lover ✈️ | Looking for someone to explore the city with",
+    location: "Lagos",
+    photos: [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Travel", "Coffee", "Photography", "Yoga"],
+    distance: 3,
+  },
+  {
+    id: "2",
+    name: "Amara",
+    age: 24,
+    bio: "Creative soul 🎨 | Music is my love language | Let's talk about your favorite albums",
+    location: "Abuja",
+    photos: [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Art", "Music", "Fashion", "Dancing"],
+    distance: 8,
+  },
+  {
+    id: "3",
+    name: "Chioma",
+    age: 28,
+    bio: "Fitness enthusiast 💪 | Foodie at heart | Looking for genuine connections",
+    location: "Lagos",
+    photos: [
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Fitness", "Cooking", "Movies", "Hiking"],
+    distance: 5,
+  },
+  {
+    id: "4",
+    name: "Zara",
+    age: 25,
+    bio: "Bookworm 📚 | Sunset chaser 🌅 | Let's grab drinks and talk about everything",
+    location: "Port Harcourt",
+    photos: [
+      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1506863530036-1efeddceb991?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Reading", "Wine", "Beach", "Podcasts"],
+    distance: 12,
+  },
+  {
+    id: "5",
+    name: "Ngozi",
+    age: 27,
+    bio: "Entrepreneur 💼 | Adventure seeker | Looking for someone ambitious and kind",
+    location: "Lagos",
+    photos: [
+      "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb675?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1464863979621-258859e62245?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Business", "Travel", "Networking", "Gym"],
+    distance: 2,
+  },
+  {
+    id: "6",
+    name: "Aisha",
+    age: 23,
+    bio: "Tech girl 👩‍💻 | Anime lover | Can talk about startups or Studio Ghibli for hours",
+    location: "Ibadan",
+    photos: [
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Tech", "Anime", "Gaming", "Coffee"],
+    distance: 15,
+  },
+  {
+    id: "7",
+    name: "Tolu",
+    age: 29,
+    bio: "Photographer 📸 | Nature lover | Let's create memories together",
+    location: "Lagos",
+    photos: [
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1496360167021-56a66845b17d?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Photography", "Nature", "Hiking", "Dogs"],
+    distance: 4,
+  },
+  {
+    id: "8",
+    name: "Blessing",
+    age: 26,
+    bio: "Nurse by day, dancer by night 💃 | Looking for laughter and good vibes only",
+    location: "Enugu",
+    photos: [
+      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=1200&fit=crop",
+      "https://images.unsplash.com/photo-1526510747491-63f787704f7e?w=800&h=1200&fit=crop",
+    ],
+    interests: ["Dancing", "Healthcare", "Food", "Friends"],
+    distance: 9,
+  },
+];
