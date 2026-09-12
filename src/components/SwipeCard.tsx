@@ -1,17 +1,18 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { MapPin, X, Heart } from "lucide-react";
+import { MapPin, X, Heart, RotateCcw, Star } from "lucide-react";
 import { Profile } from "@/lib/types";
 import clsx from "clsx";
 
 interface SwipeCardProps {
   profile: Profile;
   onSwipe: (direction: "left" | "right") => void;
+  onOpenDetails?: (profile: Profile) => void;
   isTop: boolean;
 }
 
-export default function SwipeCard({ profile, onSwipe, isTop }: SwipeCardProps) {
+export default function SwipeCard({ profile, onSwipe, onOpenDetails, isTop }: SwipeCardProps) {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -124,7 +125,7 @@ export default function SwipeCard({ profile, onSwipe, isTop }: SwipeCardProps) {
         )}
 
         {/* Gradient + info */}
-        <div className="absolute bottom-0 left-0 right-0 card-gradient pt-24 pb-6 px-5 z-10">
+        <button type="button" onClick={() => onOpenDetails?.(profile)} className="absolute bottom-0 left-0 right-0 card-gradient pt-24 pb-6 px-5 z-10 text-left">
           <div className="flex items-end gap-2">
             <h2 className="text-3xl font-bold text-white drop-shadow">
               {profile.name}
@@ -150,7 +151,7 @@ export default function SwipeCard({ profile, onSwipe, isTop }: SwipeCardProps) {
               </span>
             ))}
           </div>
-        </div>
+        </button>
       </div>
     </div>
   );
@@ -159,22 +160,38 @@ export default function SwipeCard({ profile, onSwipe, isTop }: SwipeCardProps) {
 export function ActionButtons({
   onNope,
   onLike,
+  onSuperLike,
+  onRewind,
+  canRewind,
 }: {
   onNope: () => void;
   onLike: () => void;
+  onSuperLike: () => void;
+  onRewind: () => void;
+  canRewind: boolean;
 }) {
   return (
-    <div className="flex items-center justify-center gap-6 mt-4">
+    <div className="flex items-center justify-center gap-4 mt-4">
+      <button onClick={onRewind} disabled={!canRewind} className="w-12 h-12 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-yellow-300 disabled:opacity-30 btn-press" aria-label="Undo last swipe">
+        <RotateCcw className="w-5 h-5" />
+      </button>
       <button
         onClick={onNope}
-        className="w-16 h-16 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center text-red-400 hover:bg-red-500/20 hover:border-red-400 transition-all btn-press shadow-lg"
+        className="w-14 h-14 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center text-red-400 hover:bg-red-500/20 hover:border-red-400 transition-all btn-press shadow-lg"
         aria-label="Pass"
       >
         <X className="w-8 h-8" strokeWidth={2.5} />
       </button>
       <button
+        onClick={onSuperLike}
+        className="w-12 h-12 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-sky-300 btn-press"
+        aria-label="Super Like"
+      >
+        <Star className="w-5 h-5 fill-current" />
+      </button>
+      <button
         onClick={onLike}
-        className="w-16 h-16 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center text-green-400 hover:bg-green-500/20 hover:border-green-400 transition-all btn-press shadow-lg"
+        className="w-14 h-14 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center text-green-400 hover:bg-green-500/20 hover:border-green-400 transition-all btn-press shadow-lg"
         aria-label="Like"
       >
         <Heart className="w-8 h-8" strokeWidth={2.5} />

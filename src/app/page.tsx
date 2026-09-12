@@ -31,10 +31,7 @@ export default function LandingPage() {
 
       {/* Hero */}
       <main className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-white/70 mb-8">
-          <Sparkles className="w-4 h-4 text-[#ff4458]" />
-           No signup required
-        </div>
+        
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight max-w-2xl leading-[1.1]">
           Find your next
@@ -90,7 +87,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="relative z-10 py-6 text-center text-sm text-white/40">
-        Built as a demo • Deployable on Vercel in minutes
+       @2026 lovenorth • Built by Jolomi Dudu
       </footer>
     </div>
   );

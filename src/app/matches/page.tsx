@@ -79,9 +79,9 @@ export default function MatchesPage() {
                     {m.lastMessage || "Say hello 👋"}
                   </p>
                 </div>
-                <button className="w-11 h-11 rounded-full bg-[#ff4458]/15 text-[#ff4458] flex items-center justify-center hover:bg-[#ff4458]/25 transition btn-press">
+                <Link href={`/chat/${m.id}`} className="w-11 h-11 rounded-full bg-[#ff4458]/15 text-[#ff4458] flex items-center justify-center hover:bg-[#ff4458]/25 transition btn-press" aria-label={`Message ${m.profile.name}`}>
                   <MessageCircle className="w-5 h-5" />
-                </button>
+                </Link>
               </div>
             ))}
           </div>
