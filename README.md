@@ -1,4 +1,4 @@
-# Sparkly — Dating App Demo
+# lovenorth — Dating App Demo
 
 A lightweight, polished Tinder/Bumble-style dating web app demo.
 

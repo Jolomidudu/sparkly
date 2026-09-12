@@ -19,7 +19,7 @@ export default function LandingPage() {
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#ff4458] to-[#ff7a8a] flex items-center justify-center">
             <Heart className="w-5 h-5 text-white fill-white" />
           </div>
-          <span className="text-xl font-bold tracking-tight">Sparkly</span>
+          <span className="text-xl font-bold tracking-tight">lovenorth</span>
         </div>
         <Link
           href="/discover"
@@ -33,7 +33,7 @@ export default function LandingPage() {
       <main className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-white/70 mb-8">
           <Sparkles className="w-4 h-4 text-[#ff4458]" />
-          Live Demo • No signup required
+           No signup required
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight max-w-2xl leading-[1.1]">
@@ -45,7 +45,7 @@ export default function LandingPage() {
 
         <p className="mt-5 text-lg text-white/60 max-w-md leading-relaxed">
           A polished, mobile-first dating experience. Swipe, match, and chat —
-          all in a lightweight demo you can share.
+          all in a lightweight  you can share.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-sm">

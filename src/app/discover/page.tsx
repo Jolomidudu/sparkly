@@ -89,7 +89,7 @@ export default function DiscoverPage() {
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#ff4458] to-[#ff7a8a] flex items-center justify-center">
             <Heart className="w-4 h-4 text-white fill-white" />
           </div>
-          <span className="text-lg font-bold">Sparkly</span>
+          <span className="text-lg font-bold">lovenorth</span>
         </div>
         <Link
           href="/matches"

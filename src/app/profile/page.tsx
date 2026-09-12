@@ -85,7 +85,7 @@ export default function ProfilePage() {
         </button>
 
         <p className="mt-8 text-center text-xs text-white/30">
-          Sparkly Demo v0.1 • Built for Vercel
+          lovenorth • Built by Jolomi Dudu
         </p>
       </div>
 
